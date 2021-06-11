@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
+
 </head>
 
 <body>
@@ -36,7 +37,7 @@
     <div class="main-panel">
         <div class="container-fluid">
             <br>
-            <h2 class="align-text-center">Simulated Learning System</h2>
+            <h2>Simulated Learning System</h2>
             <br>
 
 
@@ -44,7 +45,59 @@
                 <div class="col-12 box-margin height-card">
                     <div class="card">
                         <div class="card-body">
+                            <p class='text-dark'>This page will contain a quiz that mimics a learning system (for example, Moodle Quizzes or Learn ICE tasks).
+                                <br><br> Below is an example of how the question's will be presented to the 'student'. This section of the instrument is still under development due to the need of more research to be conducted to determine the most suitable
+                                questions to ask and how to ask them to acheive the most desired results.
+                            </p>
+                            <hr>
+                            <div class="text-center">
+                                <h5>Question 1: What is the missing number in the sequence?</h5>
+                                <h6>3, 11, 19, 27, ?</h6>
+                            </div>
+                            <div class="container">
 
+                                <div class="row">
+                                    <div class="col-2">
+                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="right" data-content="Here will be help/hints related to the question.">Hint <i class="fa fa-question"></i></button><br>
+                                        <button type="button" class="btn btn-yellow-other ">Resources <i class="fa fa-download"></i></button>
+
+                                    </div>
+                                    <div class="col-8 form-group">
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="ml-3">&nbsp;&nbsp;33</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;35</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;37</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;39</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;41</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <h6><span id="minutes">00</span>:<span id="seconds">00</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="float-right">
+                                <button type="button" class="btn btn-lg btn-rounded btn-yellow-other mb-2 mr-2">NEXT <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                            </div>
                         </div>
 
 
@@ -63,7 +116,30 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bundle.js"></script>
 
+    <!-- Active JS -->
     <script src="js/default-assets/active.js"></script>
+
+    <script>
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalSeconds = 0;
+        setInterval(setTime, 1000);
+
+        function setTime() {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds % 60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        }
+
+        function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            } else {
+                return valString;
+            }
+        }
+    </script>
 
 
 </body>

@@ -8941,7 +8941,7 @@ select,
 }
 
 .custom-input-file--2+label {
-    color: #fff;
+    color: rgb(180, 180, 180);
     border-color: #6e00ff;
     background: #6e00ff;
 }
