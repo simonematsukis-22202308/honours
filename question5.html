@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Simone Matsukis - Honours Research Project</title>
+
+    <!-- Master Stylesheet CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader-area">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Main Page -->
+    <div class="main-panel">
+        <div class="container-fluid">
+            <br>
+            <h2>Simulated Learning System Quiz</h2>
+
+            <br>
+
+
+            <div class="row">
+                <div class="col-12 box-margin height-card">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <div class="text-center">
+                                <h4>Question 5: <br>The numbers below have been seperated into 3 groupings. Which group should contain the number 16?
+                                    <p style='color:black;'>(Armstrong, 2013)</p>
+                                </h4>
+
+
+                                <div class="row justify-content-center">
+                                    <div class="col-auto">
+                                        <table class="table table-sm table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Group A:</td>
+                                                    <td>1</td>
+                                                    <td>4</td>
+                                                    <td>7</td>
+                                                    <td>11</td>
+                                                    <td>14</td>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-sm table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Group B:</td>
+                                                    <td>2</td>
+                                                    <td>5</td>
+                                                    <td>10</td>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-sm table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Group C:</td>
+                                                    <td>0</td>
+                                                    <td>3</td>
+                                                    <td>6</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <h6><span id="minutes">00</span>:<span id="seconds">00</span></h6>
+                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="If you look at the number value, this question will most likely trick you.">Hint <i class="fa fa-question"></i></button><br>
+                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal">Resources <i class="fa fa-download"></i></button><br><br>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-8 form-group ">
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="ml-3">&nbsp;&nbsp;Group A</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;Group B</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;Group C</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;None</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                            <div class="float-right">
+                                <button type="button" class="btn btn-lg btn-rounded btn-yellow-other mb-2 mr-2" onclick="window.location='question6.html'">Question 6 <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--Modal-->
+        <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Resources</h5>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class='text-center' style='color:black;'>When looking at numbers, we naturally associate them to numerical value's. This question require's you to look at the numbers a bit differently. <br> Look at the appearance of each number and the appearance of the letters that
+                            make them up.<br> The letter A: Only made up from straight lines (like 1's, 4's, and 7's)<br> The letter B: Formed from straight and curved lines (like 5's and 12's)<br> The letter C: Formed only from curved lines (like 0).<br>                            What shape is the letter 16 made from?
+
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Plugins Js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
+
+    <!-- Inject JS -->
+    <script src="js/default-assets/modal-classes.js"></script>
+    <script src="js/default-assets/modaleffects.js"></script>
+
+    <!-- Active JS -->
+    <script src="js/default-assets/active.js"></script>
+
+    <script>
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalSeconds = 0;
+        setInterval(setTime, 1000);
+
+        function setTime() {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds % 60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        }
+
+        function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            } else {
+                return valString;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

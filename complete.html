@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Simone Matsukis - Honours Research Project</title>
+
+    <!-- Master Stylesheet CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader-area">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Main Page -->
+    <div class="main-panel">
+        <div class="container-fluid">
+            <br>
+            <h2>Simulated Learning System Quiz</h2>
+            <br>
+
+
+            <div class="row">
+                <div class="col-12 box-margin height-card">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h2 style='color: black;' class='text-center'>You have completed the quiz!
+                                <h5 class='text-center'>Thank you for taking the time to assist me with my research project. Your participation is greatly appreciated!</h5>
+
+                            </h2>
+                            <hr>
+                            <div class="text-center">
+                                <h6>Below are your results from the quiz, as well as your idenitifed learning style with the associated characteristics.
+                                    <br> ** Because these are just the static pages, this information is not accurate and just presents an example of what would be shown**
+                                </h6>
+                                <br>
+                            </div>
+                            <h5>
+                                <u>Quiz Results:</u>
+                            </h5>
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Total Time Taken:</th>
+                                                    <th scope="col">Results ( /8):</th>
+                                                    <th scope="col">Correctly Answered Questions:</th>
+                                                    <th scope="col">Incorrectly Answered Questions:</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+
+                                                <td>10 Minutes 34 Seconds (10:34)</td>
+                                                <td>3/8 = 37,5%</td>
+                                                <td>2,3,7</td>
+                                                <td>1,4,5,6,8</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <h5>
+                                <u>Learning Style:</u>
+                            </h5>
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Identified Learning Style:</th>
+                                                    <th scope="col">Strength:</th>
+                                                    <th scope="col">Characteristics:</th>
+                                                    <th scope="col">You learn best when:</th>
+                                                </tr>
+                                            </thead>
+                                            <tr>
+
+                                                <td>Theorist</td>
+                                                <td>Moderate preference</td>
+                                                <td>You seek to understand the theory behind phenomena, enjoy understanding background information, you easily understand models, and respond well to facts/statistics.</td>
+                                                <td> You are intellectually challenged, are faced with complex challenges, there is theory, methodology, and rationality behind what you are learning, and findings can be generalized.</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <h6>If you know any other undergraduate student's that wouldn't mind completing this quiz, please could you share this <a href='https://simonematsukis-22202308.github.io/'>link</a> with them! </h6>
+                                <br>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- Plugins Js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bundle.js"></script>
+
+    <!-- Active JS -->
+    <script src="js/default-assets/active.js"></script>
+
+    <script>
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalSeconds = 0;
+        setInterval(setTime, 1000);
+
+        function setTime() {
+            ++totalSeconds;
+            secondsLabel.innerHTML = pad(totalSeconds % 60);
+            minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+        }
+
+        function pad(val) {
+            var valString = val + "";
+            if (valString.length < 2) {
+                return "0" + valString;
+            } else {
+                return valString;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
