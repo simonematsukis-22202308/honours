@@ -43,69 +43,79 @@
                                     <span class="font-18 text-white mb-0">
                                         I aim to develop a machine learning model that automatically classifies a student into their learning style based on their interaction with online learning systems. The data you supply will be used to train my model.<br><br>
                                         There are two parts to this study: <br>
-                                        (1)The first part will require you to complete a Learning Style Questionnaire and enter personal information. The personal information that is required does not include any information that can be used to identify you (such as your email address, contact number, or your name).
-                                            <br><br>
-                                            The second part of this study will require you to answer a few quiz-like questions as you would on your specific institute's learning platform (e.g., Moodle or Blackboard). While answering these questions, your interaction with the site will be monitored and timed.
-                                            <br><br>
-                                            During this data collection, you will remain anonymous. The collected data will not be able to be linked to the owner of the information. You may also decide to withdraw from the site at any time.
-                                            <br><br>
-                                            After completing the data collection process, you will receive what your identified learning style is. This highlights the way in which you most effectively retrieve, organize, process, absorb, and retain knowledge.
-                                            <br><br>
-                                            The total time required: ~ 15-20 minutes.
-                                            <br><br>
-                                            If you would like to find out more about my research project you can do so <a href='https://www.canva.com/design/DAEgamgEGI8/m8K5URuo1ecxiGRQ3BQE8g/view?utm_content=DAEgamgEGI8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton' target="_blank">here</a>.
-                                            <br>
-                                            <hr style="height:2px;border-width:0;color:#ffd230;background-color:#ffd230">
+                                        (1) The first part will require you to complete a Learning Style Questionnaire and enter personal information. The personal information that is required does not include any information that can be used to identify you (such as your email address, contact number, or your name).
+                                        <br>
+                                        (2) The second part of this study will require you to answer a few quiz-like questions as you would on your specific institute's learning platform (e.g., Moodle or Blackboard). While answering these questions, your interaction with the site will be monitored and timed.
+                                        <br><br>
+                                        During this data collection, you will remain anonymous. The collected data will not be able to be linked to the owner of the information. You may also decide to withdraw from the site at any time.
+                                        <br><br>
+                                        After completing the data collection process, you will receive what your identified learning style is. This highlights the way in which you most effectively retrieve, organize, process, absorb, and retain knowledge.
+                                        <br><br>
+                                        The total time required: ~ 15-20 minutes.
+                                        <br><br>
+                                        If you would like to find out more about my research project you can do so <a href='https://www.canva.com/design/DAEgamgEGI8/m8K5URuo1ecxiGRQ3BQE8g/view?utm_content=DAEgamgEGI8&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton' target="_blank">here</a>.
+                                        <br>
+                                        <hr style="height:2px;border-width:0;color:#ffd230;background-color:#ffd230">
 
-                                            <div class="form-group">
-                                                <div class="checkbox d-inline">
-                                                    <input type="checkbox" name="consent" id="consent" onclick="makeButtonAbled()">
-                                                    <label for="consent" class="cr"><span class="font-14 text-white mb-0">I give consent that the information provided and collected may be used in this research
-                                    study.</span>
+                                        <div class="form-group">
+                                            <div class="checkbox d-inline">
+                                                <input type="checkbox" name="consent" id="consent" onclick="makeButtonAbled()">
+                                                <label for="consent" class="cr"><span class="font-14 text-white mb-0">I give consent that the information provided and collected may be used in this research
+                                                        study.</span>
                                     </label>
                                 </div>
                             </div>
+
+
+
                             <div class="form-group">
                                 <div class="checkbox d-inline">
                                     <input type="checkbox" name="results" id="results" onclick="displayEmailField(this)">
                                     <label for="results" class="cr"><span class="font-14 text-white mb-0">I would like to receive the results from this study upon completion.</span>
-                                    </label>
+                                                </label>
                                 </div>
+
                                 <div id="email" style="display: none">
                                     <div class="form-group">
                                         <br>
 
                                         <label><span class="font-14 text-white mb-0">Please enter your email address**:</span></label>
-                                        <form class="needs-validation" id="" method="get" action="#" novalidate>
-                                            <div class="col-lg-6 col-lg-offset-6">
-                                                <div class="input-group">
-                                                    <input type="email" class="form-control" name="email" type="email" id="email" placeholder="simone@example.com" required>
-                                                </div>
+                                        <div class="col-lg-6 col-lg-offset-6">
+                                            <div class="input-group">
+                                                <input type="email" class="form-control" name="emailAddress" id="emailAddress" placeholder="simone@example.com" required>
                                             </div>
-                                            <br>
-                                            <label><span class="font-14 text-white mb-0">**Please note that this email will not be used for any other purposes other than
-                                            disseminating the results of this study. <br>This email address will also not be connected to any information you provide in this study - it will
-                                            be added to a mailing list only.
-                                        </span></label>
+                                        </div>
+                                        <br>
+                                        <label><span class="font-14 text-white mb-0">**Please note that this email will not be used for any other purposes other than
+                                                                disseminating the results of this study. <br>This email address will also not be connected to any information you provide in this study - it will
+                                                                be added to a mailing list only.
+                                                            </span></label>
 
                                     </div>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-lg btn-rounded btn-yellow mb-2 mr-2" onclick="location.href = 'personal-details.html';" disabled="disable" name="emailBegin" id='emailBegin'>SUBMIT EMAIL & BEGIN! <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                                    </div>
+
+
+
                                 </div>
                             </div>
 
-                            </span>
-                            <br><br>
-
-                            <div>
-                                <button type="submit" class="btn btn-lg btn-rounded btn-yellow mb-2 mr-2" onclick="window.location='personal-details.html'" disabled="disable" id="begin">LET'S BEGIN! <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-                            </div>
-                            </form>
                         </div>
+
+                        </span>
+                        <br><br>
+                        <button type='submit' class="btn btn-lg btn-rounded btn-yellow mb-2 mr-2" onclick="location.href = 'personal-details.html';" disabled="disable" name="begin" id='begin'>LET'S BEGIN! <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+
+
                     </div>
-
-
                 </div>
+
+
             </div>
         </div>
+    </div>
 
 
     </div>
@@ -131,40 +141,46 @@
             var checkBox = document.getElementById("consent");
             // Get the output text
             var button = document.getElementById("begin");
+            var emailButton = document.getElementById("emailBegin");
 
             // If the checkbox is checked, make button enabled
-            if (checkBox.checked == true) {
+            if (checkBox.checked == true && document.getElementById("results").checked == false) {
                 button.disabled = false;
+                emailButton.disabled = false;
+                document.getElementById("begin").style.display = 'block';
+            } else if (checkBox.checked == true && document.getElementById("results").checked == true) {
+                document.getElementById("begin").style.display = 'none';
+                emailButton.disabled = false;
             } else {
                 button.disabled = true;
+                emailButton.disabled = true;
             }
         }
 
         function displayEmailField(results) {
             var email = document.getElementById("email");
-            email.style.display = results.checked ? "block" : "none";
+            var checkBox = document.getElementById("consent");
+            var resultscheckBox = document.getElementById("results");
+
+            if (checkBox.checked == true && resultscheckBox.checked == false) {
+                document.getElementById("begin").style.display = 'block';
+                document.getElementById("begin").style.disabled = false;
+                email.style.display = "none";
+
+            } else if (resultscheckBox.checked == true && checkBox.checked == true) {
+                email.style.display = "block";
+                document.getElementById("begin").style.display = 'none';
+            } else if (resultscheckBox.checked == false && checkBox.checked == false) {
+                email.style.display = "none";
+                document.getElementById("begin").style.display = 'block';
+            } else if (checkBox.checked == false && resultscheckBox.checked == true) {
+                email.style.display = "block";
+                document.getElementById("begin").style.display = 'none';
+            }
+
+
+
         }
-
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function() {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            var forms = document.querySelectorAll('.needs-validation')
-
-            // Loop over them and prevent submission
-            Array.prototype.slice.call(forms)
-                .forEach(function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (!form.checkValidity()) {
-                            event.preventDefault()
-                            event.stopPropagation()
-                        }
-
-                        form.classList.add('was-validated')
-                    }, false)
-                })
-        })()
     </script>
 
 

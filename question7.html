@@ -47,10 +47,13 @@
                     <div class="card">
                         <div class="card-body">
 
+                            <div class="progress h-20 mb-20">
+                                <div class="progress-bar bg-yellow h-20" role="progressbar" style="width: 87.5%" aria-valuenow="87.5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
                             <div class="text-center">
-                                <h4>Question 7: <br> A train leaves Johannesburg for Durban traveling at 65 kilometre's per hour. One hour later a train leaves Durban for Johannesburg traveling at 55 kilometre's per hour. Assuming both trains maintain a constant
-                                    speed and the tracks are straight, how far apart are the trains one hour before they meet?
-                                    <p style='color:black;'>(Armstrong, 2013)</p>
+                                <h4>Question 7: <br> You walk 6km for 3 hours on Monday and walk at 10 km for 5 hours on Tuesday. What is your average speed?
+                                    <p style='color:black;'>(Kumar, 2021)</p>
                                 </h4>
 
 
@@ -62,32 +65,36 @@
                             </div>
                             <hr>
                             <div class="container">
-
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-4">
                                         <h6><span id="minutes">00</span>:<span id="seconds">00</span></h6>
-                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="If you add the speed, you'll get all you need.">Hint <i class="fa fa-question"></i></button><br>
-                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal">Resources <i class="fa fa-download"></i></button><br><br>
+                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="Distance divided by time will give you the speed, and that is exactly all you need." id='hintButton'>Hint <i class="fa fa-question"></i></button><br>
+                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal" name="resourceButton" id="resourceButton">Resources <i class="fa fa-download"></i></button><br><br>
                                     </div>
                                     <div class="col-lg-8 col-sm-8 form-group ">
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="ml-3">&nbsp;&nbsp;65km apart</span>
+                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="65" checked=""><span class="ml-3">&nbsp;&nbsp;8 km/h</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;55km apart</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="55"><span class="ml-3">&nbsp;&nbsp;1 km/h</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;120km apart</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="120"><span class="ml-3">&nbsp;&nbsp;2 km/h</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;Too litte information is given</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="0"><span class="ml-3">&nbsp;&nbsp;Too litte information is given</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="0"><span class="ml-3">&nbsp;&nbsp;I don't know</span>
                                             </h6>
                                         </div>
                                     </div>

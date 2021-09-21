@@ -4545,9 +4545,9 @@ bx-tada {
 }
 
 .btn-primary:hover {
-    color: #5034c4;
+    color: #ffd230;
     background-color: #fff;
-    border-color: #5034c4;
+    border-color: #ffd230;
 }
 
 .btn-facebook {
@@ -13306,14 +13306,18 @@ a.mytooltip {
 
 .animated-progressbar #myProgress {
     width: 100%;
-    background-color: #e9ecef;
+    background-color: #ffd230;
     border-radius: 5px;
+}
+
+.bg-yellow {
+    background-color: #ffd230 !important;
 }
 
 .animated-progressbar #myBar {
     width: 10%;
     height: 18px;
-    background-color: #5867dd;
+    background-color: #ffd230;
     text-align: center;
     line-height: 18px;
     color: #ffffff;

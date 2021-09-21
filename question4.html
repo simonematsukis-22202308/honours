@@ -47,8 +47,12 @@
                     <div class="card">
                         <div class="card-body">
 
+                            <div class="progress h-20 mb-20">
+                                <div class="progress-bar bg-yellow h-20" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
                             <div class="text-center">
-                                <h4>Question 4: <br>A large volume of water is gushing through a pipe which narrows at the outlet. At which point, A, B, C or D will the water flow fastest?
+                                <h4>Question 4: <br>A large volume of water is gushing through a pipe which narrows at the outlet. At which point, A, B, C or D do you think the water flow fastest?
                                     <p style='color:black;'>(Holmes, 2020)</p>
                                 </h4>
 
@@ -65,33 +69,38 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-4">
                                         <h6><span id="minutes">00</span>:<span id="seconds">00</span></h6>
-                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="Two different things are amount and speed, where the water flows the fastest is what we need.">Hint <i class="fa fa-question"></i></button><br>
-                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal">Resources <i class="fa fa-download"></i></button><br><br>
+                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="Two different things are amount and speed, where the water flows the fastest is what we need." id='hintButton'>Hint <i class="fa fa-question"></i></button><br>
+                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal" name="resourceButton" id="resourceButton">Resources <i class="fa fa-download"></i></button><br><br>
                                     </div>
                                     <div class="col-lg-8 col-sm-8 form-group ">
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="ml-3">&nbsp;&nbsp;A</span>
+                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="A" checked=""><span class="ml-3">&nbsp;&nbsp;A</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;B</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="B"><span class="ml-3">&nbsp;&nbsp;B</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios3" value="option2"><span class="ml-3">&nbsp;&nbsp;C</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios3" value="C"><span class="ml-3">&nbsp;&nbsp;C</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="option2"><span class="ml-3">&nbsp;&nbsp;D</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="D"><span class="ml-3">&nbsp;&nbsp;D</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="option2"><span class="ml-3">&nbsp;&nbsp;Not Enough Information</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="E"><span class="ml-3">&nbsp;&nbsp;Not Enough Information</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="Z"><span class="ml-3">&nbsp;&nbsp;I don't know</span>
                                             </h6>
                                         </div>
                                     </div>

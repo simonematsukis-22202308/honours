@@ -47,6 +47,10 @@
                     <div class="card">
                         <div class="card-body">
 
+                            <div class="progress h-20 mb-20">
+                                <div class="progress-bar bg-yellow h-20" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
                             <div class="text-center">
                                 <h4>Question 6: <br>The day before two days after the day before tomorrow is Saturday. What day is it today?
                                     <p style='color:black;'>(Donvito, 2021)</p>
@@ -54,32 +58,36 @@
                             </div>
                             <hr>
                             <div class="container">
-
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-4">
                                         <h6><span id="minutes">00</span>:<span id="seconds">00</span></h6>
-                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="The “day before tomorrow” is today, don't let the confusing wording get in your way.">Hint <i class="fa fa-question"></i></button><br>
-                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal">Resources <i class="fa fa-download"></i></button><br><br>
+                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="The “day before tomorrow” is today, don't let the confusing wording get in your way." id='hintButton'>Hint <i class="fa fa-question"></i></button><br>
+                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal" name="resourceButton" id="resourceButton">Resources <i class="fa fa-download"></i></button><br><br>
                                     </div>
                                     <div class="col-lg-8 col-sm-8 form-group ">
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="ml-3">&nbsp;&nbsp;Sunday</span>
+                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="Sunday" checked=""><span class="ml-3">&nbsp;&nbsp;Sunday</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;Wednesday</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="Wednesday"><span class="ml-3">&nbsp;&nbsp;Wednesday</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios3" value="option2"><span class="ml-3">&nbsp;&nbsp;Thursday</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios3" value="Thursday"><span class="ml-3">&nbsp;&nbsp;Thursday</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="option2"><span class="ml-3">&nbsp;&nbsp;Friday</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="Friday"><span class="ml-3">&nbsp;&nbsp;Friday</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios4" value="None"><span class="ml-3">&nbsp;&nbsp;I don't know</span>
                                             </h6>
                                         </div>
                                     </div>

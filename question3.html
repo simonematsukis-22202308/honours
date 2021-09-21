@@ -46,9 +46,12 @@
                 <div class="col-12 box-margin height-card">
                     <div class="card">
                         <div class="card-body">
+                            <div class="progress h-20 mb-20">
+                                <div class="progress-bar bg-yellow h-20" role="progressbar" style="width: 37.5%" aria-valuenow="37.5" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
                             <div class="text-center">
-                                <h4>Question 3: <br>How many centimetre's tall is a cube that has a surface area (in square centimetre's) that is equal to its volume (in cubic centimetre's)?
+                                <h4>Question 3: <br>How many centimetre's tall is a cube that has a surface area (in square centimetre's) that is equal to its volume (h x h x h)?
                                     <p style='color:black;'>(Armstrong, 2011)</p>
                                 </h4>
 
@@ -66,28 +69,33 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-sm-4">
                                         <h6><span id="minutes">00</span>:<span id="seconds">00</span></h6>
-                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="The number of sides on a cube is six, and they are all equal to one another we can predict.">Hint <i class="fa fa-question"></i></button><br>
-                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal">Resources <i class="fa fa-download"></i></button><br><br>
+                                        <button type="button" class="btn btn-yellow-other mb-10" data-container="body" data-toggle="popover" data-placement="top" data-content="The number of sides on a cube is six, and they are all equal to one another we can predict." id='hintButton'>Hint <i class="fa fa-question"></i></button><br>
+                                        <button type="button" class="btn btn-yellow-other " data-toggle="modal" data-target="#exampleModal" name="resourceButton" id="resourceButton">Resources <i class="fa fa-download"></i></button><br><br>
                                     </div>
                                     <div class="col-lg-8 col-sm-8 form-group ">
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="option1" checked=""><span class="ml-3">&nbsp;&nbsp;12cm</span>
+                                                <input type="radio" class="form-check-input mr-2" name="optionsRadios" id="optionsRadios1" value="12" checked=""><span class="ml-3">&nbsp;&nbsp;12cm</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;18cm</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="18"><span class="ml-3">&nbsp;&nbsp;18cm</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;6cm</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="6"><span class="ml-3">&nbsp;&nbsp;6cm</span>
                                             </h6>
                                         </div>
                                         <div class="form-check pl-0 mb-2">
                                             <h6 class="form-check-label">
-                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="option2"><span class="ml-3">&nbsp;&nbsp;None of the above</span>
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="0"><span class="ml-3">&nbsp;&nbsp;None of the above</span>
+                                            </h6>
+                                        </div>
+                                        <div class="form-check pl-0 mb-2">
+                                            <h6 class="form-check-label">
+                                                <input type="radio" class="form-check-input mr-1" name="optionsRadios" id="optionsRadios2" value="0"><span class="ml-3">&nbsp;&nbsp;I don't know</span>
                                             </h6>
                                         </div>
                                     </div>
